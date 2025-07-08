@@ -1,0 +1,197 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  color: #19323c;
+  text-align: center;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column; /* Arrange items in a column */
+  align-items: center; /* Center horizontally */
+  justify-content: space-evenly;
+}
+
+h2 {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: 70px;
+  background: linear-gradient(90deg, #f38ca6, #b48ada, #79b7f2);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.game-icon {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 65px;
+  padding: 0px 20px 0px 20px;
+}
+
+.rock {
+  height: 200px;
+  width: 200px;
+  background-image: url("rock 1.png");
+  background-size: cover;
+  align-items: center;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 5px 5px 30px rgba(37, 1, 1, 0.3);
+}
+
+.paper {
+  height: 200px;
+  width: 200px;
+  background-image: url("paper 1.png");
+  background-size: cover;
+  border-radius: 50%;
+  box-shadow: 5px 5px 30px rgba(37, 1, 1, 0.3);
+}
+
+.scissors {
+  height: 200px;
+  width: 200px;
+  background-image: url("scissors 1.png");
+  background-size: cover;
+  border-radius: 50%;
+  box-shadow: 5px 5px 30px rgba(37, 1, 1, 0.3);
+}
+
+.hover {
+  transition: transform 0.5s, box-shadow 0.5s;
+  border: 10px solid transparent;
+}
+
+.hover:hover {
+  transform: scale(1.08) translate(-2px, 5px);
+  border: 10px solid #fdf6e3;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px 50px 0px;
+  gap: 100px;
+}
+
+.tag {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: 25px;
+  background: linear-gradient(180deg, #dda15e, #df6f0d);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.points {
+  font-size: 36px;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: 50px;
+  background: linear-gradient(180deg, #d4ed82, #283618);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.reset {
+  height: 50px;
+  width: 120px;
+  background: linear-gradient(to left, #0d0221, #14c4f9);
+  color: #fefae0;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+  margin-top: 5px;
+}
+
+.reset:hover {
+  transform: scale(1.12);
+}
+
+.hide {
+  display: none;
+}
+
+.win {
+  animation: winner-bounce 1s ease;
+}
+
+@keyframes winner-bounce {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+}
+
+.winner {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: 35px;
+  background: linear-gradient(180deg, #f12711, #f5af19);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 25px;
+}
+
+.loser {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: 35px;
+  background: linear-gradient(180deg, #1911f1, #98b5ef);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 25px;
+}
+
+.draw {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: 35px;
+  background: linear-gradient(180deg, #283618, #d4ed82);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 25px;
+}
+
+@media (max-width: 790px) {
+  h2{
+    font-size:30px;
+    margin-top: 50px;
+  }
+
+  .msg{
+    font-size:18px;
+  }
+
+  .game-icon{
+    gap:14px;
+    margin-top: 150px;
+  } 
+
+  .hover{
+    height:70px;
+    width:72px;
+  }
+
+  .scoreboard{
+    margin-top: 150px;
+  }
+
+  .points{
+    font-size:20px;
+  }
+
+  .tag{
+    font-size: 15px;
+  }
+
+  .reset{
+    height:35px;
+    width:80px;
+    font-size:10px;
+    margin-top:35px;
+  }
+
+}
