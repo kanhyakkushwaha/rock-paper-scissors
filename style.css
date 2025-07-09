@@ -25,7 +25,7 @@ h2 {
   display: flex;
   justify-content: center;
   gap: 50px;
-  margin-top: 65px;
+  margin-top: 50px;
   padding: 0px 20px 0px 20px;
 }
 
@@ -156,42 +156,51 @@ h2 {
 }
 
 @media (max-width: 790px) {
-  h2{
-    font-size:30px;
+  h2 {
+    font-size: 30px;
     margin-top: 50px;
   }
 
-  .msg{
-    font-size:18px;
+  .msg {
+    font-size: 18px;
   }
 
-  .game-icon{
-    gap:14px;
-    margin-top: 150px;
-  } 
-
-  .hover{
-    height:70px;
-    width:72px;
-  }
-
-  .scoreboard{
+  .game-icon {
+    gap: 14px;
     margin-top: 150px;
   }
 
-  .points{
-    font-size:20px;
+  .hover {
+    height: 70px;
+    width: 72px;
   }
 
-  .tag{
+  .scoreboard {
+    margin-top: 130px;
+  }
+
+  .points {
+    font-size: 20px;
+  }
+
+  .tag {
     font-size: 15px;
   }
 
-  .reset{
-    height:35px;
-    width:80px;
-    font-size:10px;
-    margin-top:35px;
+  .reset {
+    height: 35px;
+    width: 80px;
+    font-size: 10px;
+    margin-top: 25px;
   }
 
+  .hover {
+    transition: transform 0.5s, box-shadow 0.5s;
+    border: 5px solid transparent;
+  }
+
+  .hover:hover {
+    transform: scale(1.08) translate(-2px, 5px);
+    border: 5px solid #fdf6e3;
+  }
 }
