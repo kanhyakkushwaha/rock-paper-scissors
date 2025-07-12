@@ -8,8 +8,8 @@ body {
   text-align: center;
   background-color: #000000;
   display: flex;
-  flex-direction: column; 
-  align-items: center; 
+  flex-direction: column;
+  align-items: center;
   justify-content: space-evenly;
 }
 
@@ -93,14 +93,14 @@ h2 {
 }
 
 .reset {
-  height: 50px;
-  width: 120px;
-  background: linear-gradient(to left, #0d0221, #14c4f9);
+  height:60px;
+  width: 270px;
+  background: linear-gradient(120deg, #f38ca6, #b48ada, #79b7f2);
   color: #fefae0;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 500;
   border: none;
-  border-radius: 15px;
+  border-radius: 25px;
   cursor: pointer;
   transition: transform 0.5s ease-in-out;
   margin-top: 5px;
@@ -162,35 +162,36 @@ h2 {
   }
 
   .msg {
-    font-size: 18px;
+    margin-top:70px;
+    font-size: 20px;
   }
 
   .game-icon {
     gap: 14px;
-    margin-top: 150px;
-  }
-
-  .hover {
-    height: 70px;
-    width: 72px;
-  }
-
-  .scoreboard {
     margin-top: 130px;
   }
 
+  .hover {
+    height: 78px;
+    width: 78px;
+  }
+
+  .scoreboard {
+    margin-top: 110px;
+  }
+
   .points {
-    font-size: 20px;
+    font-size: 25px;
   }
 
   .tag {
-    font-size: 15px;
+    font-size: 20px;
   }
 
   .reset {
-    height: 35px;
-    width: 80px;
-    font-size: 10px;
+    background: linear-gradient(120deg, #f38ca6, #b48ada, #79b7f2);
+    width: 80%;
+    font-size: 16px;
     margin-top: 25px;
   }
 
