@@ -93,7 +93,7 @@ h2 {
 }
 
 .reset {
-  height:60px;
+  height: 60px;
   width: 270px;
   background: linear-gradient(120deg, #f38ca6, #b48ada, #79b7f2);
   color: #fefae0;
@@ -155,14 +155,62 @@ h2 {
   margin-top: 25px;
 }
 
-@media (max-width: 790px) {
+@media (max-width: 768px) {
   h2 {
+    font-size: 50px;
+    margin-top: 50px; /* Reduced from 60px to avoid stacking too far */
+  }
+
+  .msg {
+    margin-top: 50px; /* Reduced from 70px to make it more compact */
     font-size: 30px;
+  }
+
+  .game-icon {
+    gap: 16px;
+    margin-top: 90px; /* Was 130px — now fits better on medium screens */
+  }
+
+  .hover {
+    height: 120px; /* Reduced size to fit grid */
+    width: 120px;
+    transition: transform 0.5s, box-shadow 0.5s;
+    border: 4px solid transparent;
+  }
+
+  .hover:hover {
+    transform: scale(1.08) translate(-2px, 5px);
+    border: 4px solid #fdf6e3;
+  }
+
+  .scoreboard {
+    margin-top: 70px; /* Reduced from 110px */
+  }
+
+  .points {
+    font-size: 30px;
+  }
+
+  .tag {
+    font-size: 25px;
+  }
+
+  .reset {
+    background: linear-gradient(120deg, #f38ca6, #b48ada, #79b7f2);
+    width: 50%;
+    font-size: 18px;
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 32px;
     margin-top: 50px;
   }
 
   .msg {
-    margin-top:70px;
+    margin-top: 70px;
     font-size: 20px;
   }
 
