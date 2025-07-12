@@ -158,21 +158,21 @@ h2 {
 @media (max-width: 768px) {
   h2 {
     font-size: 50px;
-    margin-top: 30px; /* Reduced from 60px to avoid stacking too far */
+    margin-top: 30px; 
   }
 
   .msg {
-    margin-top: 50px; /* Reduced from 70px to make it more compact */
+    margin-top: 50px; 
     font-size: 30px;
   }
 
   .game-icon {
     gap: 16px;
-    margin-top: 70px; /* Was 130px — now fits better on medium screens */
+    margin-top: 70px; 
   }
 
   .hover {
-    height: 120px; /* Reduced size to fit grid */
+    height: 120px; 
     width: 120px;
     transition: transform 0.5s, box-shadow 0.5s;
     border: 4px solid transparent;
@@ -184,7 +184,7 @@ h2 {
   }
 
   .scoreboard {
-    margin-top: 58px; /* Reduced from 110px */
+    margin-top: 58px;
   }
 
   .points {
