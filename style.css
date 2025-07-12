@@ -238,9 +238,11 @@ h2 {
 
   .reset {
     background: linear-gradient(120deg, #f38ca6, #b48ada, #79b7f2);
+    height:50px;
     width: 80%;
     font-size: 16px;
     margin-top: 25px;
+    border-radius: 18px;
   }
 
   .hover {
