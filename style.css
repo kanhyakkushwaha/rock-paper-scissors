@@ -158,7 +158,7 @@ h2 {
 @media (max-width: 768px) {
   h2 {
     font-size: 50px;
-    margin-top: 50px; /* Reduced from 60px to avoid stacking too far */
+    margin-top: 30px; /* Reduced from 60px to avoid stacking too far */
   }
 
   .msg {
@@ -168,7 +168,7 @@ h2 {
 
   .game-icon {
     gap: 16px;
-    margin-top: 90px; /* Was 130px — now fits better on medium screens */
+    margin-top: 70px; /* Was 130px — now fits better on medium screens */
   }
 
   .hover {
@@ -184,7 +184,7 @@ h2 {
   }
 
   .scoreboard {
-    margin-top: 70px; /* Reduced from 110px */
+    margin-top: 58px; /* Reduced from 110px */
   }
 
   .points {
@@ -199,24 +199,24 @@ h2 {
     background: linear-gradient(120deg, #f38ca6, #b48ada, #79b7f2);
     width: 50%;
     font-size: 18px;
-    margin-top: 25px;
+    margin-top: 10px;
   }
 }
 
 @media (max-width: 480px) {
   h2 {
-    font-size: 32px;
-    margin-top: 50px;
+    font-size: 33px;
+    margin-top: 20px;
   }
 
   .msg {
     margin-top: 70px;
-    font-size: 20px;
+    font-size:21px;
   }
 
   .game-icon {
     gap: 14px;
-    margin-top: 130px;
+    margin-top: 100px;
   }
 
   .hover {
@@ -225,7 +225,7 @@ h2 {
   }
 
   .scoreboard {
-    margin-top: 110px;
+    margin-top: 100px;
   }
 
   .points {
