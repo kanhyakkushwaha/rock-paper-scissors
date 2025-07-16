@@ -39,7 +39,6 @@ const checkWinner = (playerChoice, compChoice) => {
 const showWinner = (playerChoice, compChoice) => {
   gameIcon.classList.remove("win");
   void gameIcon.offsetWidth;
-  msg.classList.remove("hide");
   gameIcon.classList.add("win");
 };
 
@@ -60,6 +59,8 @@ reset.addEventListener("click", () => {
   compPoints = 0;
   playerScore.innerText = playerPoints;
   compScore.innerText = compPoints;
-  msg.classList.add("hide");
+  msg.classList.remove("loser", "draw");
+  msg.classList.add("winner");
+  msg.innerText="Make your move!"
   gameIcon.classList.remove("win");
 });
